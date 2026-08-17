@@ -2,32 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <meta name="description" content="Portfolio ya Emmanuel Staphen, mwanafunzi wa Mzumbe University.">
+    <title>Emmanuel Staphen | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>WELCOME TO MY PORTFOLIO</h1>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="logo" href="#home">ES</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello, I'm a web developer passionate about creating beautiful and functional websites.</p>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">MZUMBE UNIVERSITY STUDENT</p>
+                <h1>Hi, I'm <span>Emmanuel Staphen.</span></h1>
+                <p class="hero-text">I am learning web development and building simple, useful digital experiences.</p>
+                <div class="hero-actions">
+                    <a class="button primary-button" href="#projects">View my projects</a>
+                    <a class="button secondary-button" href="#contact">Contact me</a>
+                </div>
+            </div>
+            <div class="profile-card" aria-label="Introduction card">
+                <p class="profile-initials">ES</p>
+                <p>Student</p>
+                <strong>Mzumbe University</strong>
+            </div>
         </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on:</p>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
+
+        <section class="section" id="about">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Learning one project at a time.</h2>
+            <p class="section-introduction">I am Emmanuel Staphen, a student at Mzumbe University. This portfolio is where I share my progress, skills, and the projects I create while learning web development.</p>
+            <div class="skills-card">
+                <h3>Skills I am building</h3>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive web design</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projects">
+            <p class="eyebrow">MY PROJECTS</p>
+            <h2>Projects and learning exercises.</h2>
+            <p class="section-introduction">These are starter project ideas. Replace their descriptions and add your live website or GitHub links when each project is ready.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-number">01</p>
+                    <h3>Personal Portfolio</h3>
+                    <p>A website to introduce myself, show my skills, and share my work.</p>
+                    <button type="button" id="project-one" class="project-button">Read details</button>
+                </article>
+                <article class="project-card">
+                    <p class="project-number">02</p>
+                    <h3>Student Task Planner</h3>
+                    <p>A future project for organising assignments, deadlines, and study goals.</p>
+                    <button type="button" id="project-two" class="project-button">Read details</button>
+                </article>
+                <article class="project-card">
+                    <p class="project-number">03</p>
+                    <h3>University Information Page</h3>
+                    <p>A future project that presents useful information for university students.</p>
+                    <button type="button" id="project-three" class="project-button">Read details</button>
+                </article>
+            </div>
+            <p id="project-message" class="project-message" aria-live="polite">Select “Read details” to learn about a project.</p>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <p class="eyebrow">CONTACT</p>
+            <h2>Let's connect.</h2>
+            <p class="section-introduction">I am open to learning opportunities, feedback, and collaboration.</p>
+            <p class="contact-note">Add your email address or social-media links here when you are ready to share them.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Emmanuel Staphen. Built while learning web development.</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
