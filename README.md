@@ -1,4 +1,4 @@
-# Emmanuel Staphen Portfolio
+# Emmanuel Stephen Portfolio
 
 This is my personal portfolio website.
 
